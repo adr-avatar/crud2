@@ -36,18 +36,22 @@ public class Crud2 {
             switch (opcion) {
                 case 1:
                     agregarPersona(scanner, personas);
+                    guardarDatos(personas);
                     break;
                 case 2:
                     leerPersonas(personas);
+                    guardarDatos(personas);
                     break;
                 case 3:
                     modificarPersona(scanner, personas);
+                    guardarDatos(personas);
                     break;
                 case 4:
                     eliminarPersona(scanner, personas);
+                    guardarDatos(personas);
                     break;
                 case 5:
-                    guardarDatos(personas);
+                  //  guardarDatos(personas);
                     System.out.println("Saliendo...");
                     return;
                 default:
